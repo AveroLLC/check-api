@@ -215,7 +215,7 @@ _Once a check is closed, tax and tip will be calculated an changes to the check 
 ##### URI parameters:
 - **id** (string, uuid) - the id of the check
 
-#####Body:
+##### Body:
 _body should be an empty object_
 
 example request body:
