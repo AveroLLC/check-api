@@ -1,10 +1,10 @@
-#Junior frontend coding exercise
+# Junior frontend coding exercise
 The following is intended as a coding exercise for junior frontend developers like recent college grads and bootcamp students. These requirements should be provided along with a fully implemented & documented API.
 
-##Avero Point of Sale System.
+## Avero Point of Sale System.
 Your job is to build the UI for Avero’s new Point of Sale system. Servers at Avero’s flagship restaurant, The Greasy Spoon, will use your UI to track sales throughout the day. You will build this UI against the existing Avero POS API (documented here).
 
-##Business Requirements:
+## Business Requirements:
 - Servers should be able to open a new check against a table (see POST /checks).
     - The restaurant has a fixed number of tables (see GET /tables). These tables never change.
     - Each check is associated with one and only one table.
@@ -30,7 +30,7 @@ Your job is to build the UI for Avero’s new Point of Sale system. Servers at A
     - If a check is closed, tax and tip should be displayed as separate line items.
 - All servers in the restaurant will be using the same UI. You may assume that only those servers will have access to this UI. You do not need to deal with identity management, authentication, authorization, login, etc. in any way.
 
-##Expectations:
+## Expectations:
 - You may use any language, library, or framework that you wish. Ultimately, you should choose whatever tools will best enable you to deliver a quality product.
 - The API endpoints that we have provided should be all that you need. Your implementation should not require any additional backend (or at most, a static file server). If you believe that you have discovered a bug in the api, [please contact us](https://github.com/AveroLLC/check-api/issues)!
 - Your final output should be a link to a publicly hosted repo (e.g. GitHub, bitbucket) which includes all of your code, assets, etc. Anything that we need to run your project and wish us to evaluate.
@@ -45,21 +45,21 @@ Your job is to build the UI for Avero’s new Point of Sale system. Servers at A
 - The quality of your code. Think about good engineering practices - legibility, maintainability, separation of concerns, testability. This should be code that you are proud of.
 - The quality of your UI / UX. You have been given significant leeway in how you implement this UI. Think about your users, think about their workflow and how they will be using this interface. If you have a talent for design, make it pretty! If you don’t, that’s ok, but it should still be easy and intuitive for your users to do their job.
 
-##API Bugs
+## API Bugs
 If you are reading this then you are one of the first people to do this code exercise and there are probably bugs in the API!
 
 If you come across a bug, please help us out and [file an issue](https://github.com/AveroLLC/check-api/issues).
 
-#API DOCUMENTATION
+# API DOCUMENTATION
 
-##Connecting
+## Connecting
 All URIs in this document have the following base:
 ```https://check-api.herokuapp.com```
 
-##Content-Type
+## Content-Type
 Any data in request or response bodies should be JSON.
 
-##Authentication
+## Authentication
 For every request, you must send an access token in the _Authorization_ header.  If you're planning on submitting this exercise to us, you should have already received an access token, so let us know if you haven't.
 
 ### GET /tables - list tables
@@ -133,7 +133,7 @@ example response body:
 ```
 
 ### POST /checks - create a new check
-#####Body:
+##### Body:
 - **tableId** (string, uuid) - the id of the table you'd like to create a check for
 
 example request body:
@@ -144,7 +144,7 @@ example request body:
 ```
 
 ### GET /checks/:id - get the details for a check
-#####URI parameters:
+##### URI parameters:
 - **id** (string, uuid) - the id of the check
 
 example response body:
@@ -183,10 +183,10 @@ example response body:
 
 
 ### PUT /checks/:id/addItem - add a menu item to a check
-#####URI parameters:
+##### URI parameters:
 - **id** (string, uuid) - the id of the check
 
-#####Body:
+##### Body:
 - **itemId** (string, uuid) - the id of the item to add to the check
 
 example request body:
@@ -197,10 +197,10 @@ example request body:
 ```
 
 ### PUT /checks/:id/voidItem - void an item on a check
-#####URI parameters:
+##### URI parameters:
 - **id** (string, uuid) - the id of the check
 
-#####Body:
+##### Body:
 - **orderedItemId** (string, uuid) - the id of the orderedItem to void (this will be different than the itemId you used to add it to the check)
 
 example request body:
@@ -212,7 +212,7 @@ example request body:
 
 ### PUT /checks/:id/close - mark a check as closed
 _Once a check is closed, tax and tip will be calculated an changes to the check will be blocked._
-#####URI parameters:
+##### URI parameters:
 - **id** (string, uuid) - the id of the check
 
 #####Body:
@@ -227,7 +227,7 @@ example request body:
 ### DELETE /checks - delete all checks
 _This is mainly here so that you can clean up data while doing dev work and get back to a fresh state._
 
-#####Body:
+##### Body:
 _body should be an empty object_
 
 example request body:
