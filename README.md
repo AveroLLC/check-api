@@ -1,4 +1,4 @@
-# Junior frontend coding exercise
+# Junior Frontend Coding Exercise
 The following is intended as a coding exercise for junior frontend developers like recent college grads and bootcamp students. These requirements should be provided along with a fully implemented & documented API.
 
 ## Avero Point of Sale System.
