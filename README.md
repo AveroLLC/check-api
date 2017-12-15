@@ -1,5 +1,5 @@
-# Junior Frontend Coding Exercise
-The following is intended as a coding exercise for junior frontend developers like recent college grads and bootcamp students. These requirements should be provided along with a fully implemented & documented API.
+# Frontend Coding Exercise
+The following is intended as a coding exercise for frontend developers.
 
 ## Avero Point of Sale System.
 Your job is to build the UI for Avero’s new Point of Sale system. Servers at Avero’s flagship restaurant, The Greasy Spoon, will use your UI to track sales throughout the day. You will build this UI against the existing Avero POS API (documented below).
@@ -39,7 +39,7 @@ Your job is to build the UI for Avero’s new Point of Sale system. Servers at A
 - There may some ambiguity in the business requirements. You are free to make assumptions where you feel like the requirements are unclear. If you do, please document these assumptions in the README.
 - This exercise should take about 4-8 hours to complete. It should represent your best effort - but we understand that it is a side project. We do not expect perfection. =)
 
-## You will be evaluated on (in roughly this order):
+## You will be evaluated on (in roughly this order):
 - Our ability to access and run your code. If we can’t run it, we can’t evaluate it.
 - Your adherence to the business and technical requirements outlined above. Beautiful code doesn’t matter if it doesn’t work correctly!
 - The quality of your code. Think about good engineering practices - legibility, maintainability, separation of concerns, testability. This should be code that you are proud of.
@@ -225,7 +225,7 @@ example request body:
 ```
 
 ### DELETE /checks - delete all checks
-_This is mainly here so that you can clean up data while doing dev work and get back to a fresh state._
+_This is here so that you can clean up data while doing dev work and get back to a fresh state.  There's no requirement to expose this through the UI you are building._
 
 ##### Body:
 _body should be an empty object_
