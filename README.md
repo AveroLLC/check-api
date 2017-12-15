@@ -1,10 +1,10 @@
 # Frontend Coding Exercise
 The following is intended as a coding exercise for frontend developers.
 
-## Avero Point of Sale System.
+## Avero Point of Sale System
 Your job is to build the UI for Avero’s new Point of Sale system. Servers at Avero’s flagship restaurant, The Greasy Spoon, will use your UI to track sales throughout the day. You will build this UI against the existing Avero POS API (documented below).
 
-## Business Requirements:
+## Business Requirements
 - Servers should be able to open a new check against a table (see POST /checks).
     - The restaurant has a fixed number of tables (see GET /tables). These tables never change.
     - Each check is associated with one and only one table.
@@ -42,7 +42,7 @@ Your job is to build the UI for Avero’s new Point of Sale system. Servers at A
 - If you wish to include any other resources (design docs, planning breakdown, etc), you may reference and link them from the README.
 - When you're ready for us to review, you should email whoever you have been in contact with at Avero.
 
-## You will be evaluated on (in roughly this order):
+## You will be evaluated on (in roughly this order)
 - Our ability to access and run your code. If we can’t run it, we can’t evaluate it.
 - Your adherence to the business and technical requirements outlined above. Beautiful code doesn’t matter if it doesn’t work correctly!
 - The quality of your code. Think about good engineering practices - legibility, maintainability, separation of concerns, testability. This should be code that you are proud of.
