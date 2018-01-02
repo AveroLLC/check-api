@@ -36,7 +36,7 @@ Your job is to build the UI for Avero’s new Point of Sale system. Servers at A
 - There may some ambiguity in the business requirements. You are free to make assumptions where you feel like the requirements are unclear. If you do, please document these assumptions in the README.
 - This exercise should take about 4-8 hours to complete. It should represent your best effort - but we understand that it is a side project. We do not expect perfection. =)
 
-## Deliery
+## Delivery
 - Your final output should be a link to a publicly hosted repo (e.g. GitHub, bitbucket) which includes all of your code, assets, etc. Anything that we need to run your project and wish us to evaluate.
 - Your code should include a README file with clear instructions for running your solution. Any dependencies, build commands, etc - every step after `git clone …` should be clearly documented. If we can’t run it, we can’t evaluate it!
 - If you wish to include any other resources (design docs, planning breakdown, etc), you may reference and link them from the README.
